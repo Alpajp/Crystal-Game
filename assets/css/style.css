@@ -1,31 +1,21 @@
-
-.diamond {
-    width: 90px;
-    height: 90px;
-    background: #1eff00;
-    margin: 0;
-    padding: 0;
-
+body {
+    background-image: url("../images/background.jpg");  
+    background-repeat: no-repeat;
+    background-size: 300%;
 }
 
-#red {
-    color: #fff;
-    background-color: #d9534f;
-    border-color: #d9534f;
-}
-#blue {
-    color: #fff;
-    background-color: #5bc0de;
-    border-color: #5bc0de;
-}
-#yellow {
-    color: #fff;
-    background-color: #f0ad4e;
-    border-color: #f0ad4e;
-}
-#green {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #5cb85c;
+img {
+    margin: 5px;
 }
 
+#imgDiv {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#matchId {
+    border: 1px solid;
+    height: 20px;
+    width: 50px;
+}

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <title>Crystal Game</title>
 </head>
 <body>
@@ -25,7 +25,8 @@
        value of each crystal.</p>
 </div>
 <div>
-    <div>
+    <div id="matchId">
+
         <h1 id="matchValue"></h1>
     </div>
     <div>
@@ -38,11 +39,11 @@
             <span id="Losses"></span>
         </div>
     </div>
-    <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+    <div id="imgDiv">
+        <img src="assets/images/Crystal1.jpg" alt="">
+        <img src="assets/images/Crystal2.jpg" alt="">
+        <img src="assets/images/Crystal3.jpg" alt="">
+        <img src="assets/images/Crystal4.jpg" alt="">
     </div>
     <h3>Your total score is:</h3>
     <div>
@@ -50,6 +51,7 @@
     </div>
 </div>
 
+<script src="assets/javascript/game.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
