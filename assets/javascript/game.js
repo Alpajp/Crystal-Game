@@ -3,6 +3,7 @@ var crystal2 = 0;
 var crystal3 = 0;
 var crystal4 = 0;
 var userTotal = 0;
+var random;
 var wins = 0;
 var losses = 0;
 var num1;
@@ -13,10 +14,11 @@ var num4;
 reset();
 
 function reset() {
-    
-    var random = Math.floor((Math.random() * 101) + 19);
+
+    random = Math.floor((Math.random() * 101) + 19);
     $('#matchValue').text(random);
-    $('#totalScore').text(userTotal);
+    userTotal = 0;
+    $('#userTotal').text(userTotal);
     $('#wins').text(wins);
     $('#losses').text(losses);
 
@@ -28,44 +30,35 @@ function reset() {
 
 $("#crystal1").on("click", function () {
     userTotal += num1;
-    $("#totalScore").text(userTotal);
-    if (totalScore === userTotal) {
-        wins++;
-        $('#wins').text(wins);
-        alert("You Won!!!");
-        reset();
-    }
+    ifWinOrLosse()
 });
+
 $("#crystal2").on("click", function () {
-    userTotal += num1;
-    $("#totalScore").text(userTotal);
-    if (totalScore === userTotal) {
-        wins++;
-        $('#wins').text(wins);
-        alert("You Won!!!");
-        reset();
-    }
+    userTotal += num2;
+    ifWinOrLosse()
 });
 
 $("#crystal3").on("click", function () {
-    userTotal += num1;
-    $("#totalScore").text(userTotal);
-    if (totalScore === userTotal) {
-        wins++;
-        $('#wins').text(wins);
-        alert("You Won!!!");
-        reset();
-    }
+    userTotal += num3;
+    ifWinOrLosse()
 });
 
 $("#crystal4").on("click", function () {
-    userTotal += num1;
-    $("#totalScore").text(userTotal);
-    if (totalScore === userTotal) {
-        wins++;
-        $('#wins').text(wins);
-        alert("You Won!!!");
-        reset();
-    }
+    userTotal += num4;
+    ifWinOrLosse()
 });
 
+
+function ifWinOrLosse() {
+    $("#userTotal").text(userTotal);
+    if (random === userTotal) {
+        wins++;
+        $('#wins').text(wins);
+        reset();
+    };
+    if(userTotal > random) {
+        losses++;
+        $('#losses').text(losses);
+        reset();
+    };
+}

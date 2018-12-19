@@ -16,7 +16,7 @@ img {
     width: 80%;
 }
 
-#matchId, #totalScoreDiv, #winsDiv, #lossesDiv {
+#matchId, #userTotalDiv, #winsDiv, #lossesDiv {
     border: 1px solid;
     width: 25%;
     background: lightblue;
