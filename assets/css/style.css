@@ -5,7 +5,9 @@ body {
 }
 
 img {
-    margin: 5px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
 }
 
 #imgDiv {
@@ -14,8 +16,15 @@ img {
     width: 80%;
 }
 
-#matchId {
+#matchId, #totalScoreDiv, #winsDiv, #lossesDiv {
     border: 1px solid;
-    height: 20px;
-    width: 50px;
+    width: 25%;
+    background: lightblue;
+    text-align: center;
+    margin-left: 10%;
+    float: left;
+}
+
+#winsLosses {
+    clear: both;
 }
