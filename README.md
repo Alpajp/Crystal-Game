@@ -1,1 +1,3 @@
 # Crystal-Game
+
+ The game was created using javaScript, HTML and CSS. This app is an adding game that asks you to click a crystal to add to your score and try to reach the target number. if you go over the target number, you lose.
